@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Etiquetas meta requeridas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <title>Hello, world!</title>
+</head>
+
+<body class="d-flex justify-content-center">
+
+    <div class="card col-10 mt-5">
+        <div class="card-header">
+            <h2>Payment form example</h2>
+        </div>
+        <div class="alert alert-danger m-2" role="alert">
+            Some fields are missing
+        </div>
+
+        <div class="row">
+
+            <div class="card-body col-5 p-4">
+                <label for="exampleDataList" class="form-label">Card#</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="XXXXXXXX">
+            </div>
+
+            <div class="card-body col-3 p-4">
+                <label for="exampleDataList" class="form-label">CVC#</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="0000">
+            </div>
+
+            <div class="card-body col-4 p-4">
+                <label for="exampleDataList" class="form-label">Amount</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="amount">
+            </div>
+        </div>
+
+        <form class="row g-3 needs-validation d-flex justify-content-around" novalidate>
+            <div class=" col-6 p-3">
+                <label for="validationTooltip01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="col-6 p-3">
+                <label for="validationTooltip02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="col-md-6 position-relative p-3">
+                <label for="validationTooltip03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationTooltip03" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+
+            <div class="col-md-3 position-relative p-3">
+                <label for="validationTooltip04" class="form-label">State</label>
+                <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Pick a state</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+                <div class="invalid-tooltip">
+                    Please select a valid state.
+                </div>
+            </div>
+
+            <div class="col-md-3 position-relative p-3">
+                <label for="validationTooltip05" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+        </form>
+
+
+
+
+        <div class="row  p-2 m-1 d-flex	justify-content-between">
+            <p class="m-0 ">We accept:</p>
+
+            <div class="p-2 bg-secondary bg-gradient rounded col-3 ">
+
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">
+                        <i class="fa-brands fa-cc-diners-club"></i>
+                    </label>
+                </div>
+
+                <div class="form-check form-check-inline m-1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-between p-2 col-6">
+
+                <form>
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div id="emailHelp" class="form-text">Add any notes here.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="card-footer text-body-secondary">
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript opcional -->
+    <!-- Popper.js, luego Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f146ebc6d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
